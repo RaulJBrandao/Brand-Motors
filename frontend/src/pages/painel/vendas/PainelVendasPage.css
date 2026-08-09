@@ -1,0 +1,115 @@
+.pv-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.pv-title-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.pv-filtros {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 22px;
+  align-items: end;
+}
+
+.pv-filtros label {
+  font-weight: 600;
+}
+
+.pv-filtros input {
+  padding: 8px;
+  width: 150px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+.pv-btn {
+  padding: 10px 14px;
+  background: #0a0a23;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pv-btn:hover {
+  background: #1b1b4f;
+}
+
+.pv-btn.export {
+  background: #057a2a;
+}
+.pv-btn.export:hover {
+  background: #0a9a39;
+}
+
+/* Cards */
+.pv-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.pv-card {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 18px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.pv-card p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Tabela */
+.pv-table-wrap {
+  overflow-x: auto;
+}
+
+.pv-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pv-table th {
+  background: #0a0a23;
+  color: white;
+  padding: 12px;
+}
+
+.pv-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover td {
+  background: #f0f0ff;
+}
+
+.voltar-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: transparent;
+  border: none;
+
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+
+  margin-bottom: 15px;
+  padding: 5px;
+
+  transition: 0.2s ease;
+}

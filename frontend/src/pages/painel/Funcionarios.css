@@ -1,0 +1,109 @@
+.func-container {
+  padding: 40px;
+}
+
+.func-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.voltar-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: transparent;
+  border: none;
+
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+
+  margin-bottom: 15px;
+  padding: 5px;
+
+  transition: 0.2s ease;
+}
+
+.voltar-btn:hover {
+  color: #007bff;
+  transform: translateX(-3px);
+}
+
+
+.btn-add-func {
+  background: #2a72ff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+}
+.btn-add-func:hover {
+  background: #1a55cc;
+}
+
+/* tabela */
+.func-table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+  background: white;
+}
+
+.func-table th,
+.func-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.acoes {
+  display: flex;
+  gap: 12px;
+}
+
+.acao {
+  cursor: pointer;
+}
+
+.acao.editar {
+  color: #0066ff;
+}
+.acao.deletar {
+  color: #df1b1b;
+}
+
+/* FORMULÁRIO */
+.form-func-container {
+  padding: 40px;
+}
+
+.form-func {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 400px;
+}
+
+.form-func input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn-salvar {
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-salvar:hover {
+  background: #1d7d33;
+}

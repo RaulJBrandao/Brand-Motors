@@ -1,0 +1,65 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.modal-box {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+  transform: scale(0.7);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.zoom-in {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.zoom-out {
+  transform: scale(0.7);
+  opacity: 0;
+}
+
+.modal-btn {
+  background: linear-gradient(90deg, #e21a1a, #ff4040);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 18px;
+  font-size: 1rem;
+  transition: 0.25s ease;
+  font-weight: 600;
+}
+
+.modal-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #c91616, #ff2b2b);
+}

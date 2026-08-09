@@ -1,0 +1,162 @@
+/* ================= OVERLAY ================= */
+.cdm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(3px);
+  z-index: 2000;
+}
+
+/* ================= MODAL ================= */
+.cdm-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 95%;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  z-index: 2001;
+  animation: cdmFadeIn 0.25s ease-out;
+}
+
+@keyframes cdmFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* ================= BOTÃO FECHAR ================= */
+/* BOTÃO DE FECHAR - pequeno e no canto superior direito */
+.cdm-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  background: #0a0a23;
+  border: none;
+  color: white;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cdm-close:hover {
+  background: #1d1d4a;
+  transform: scale(1.05);
+}
+
+
+
+/* ================= TÍTULOS ================= */
+.cdm-modal h2 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.cdm-modal h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* ================= SEÇÕES ================= */
+.cdm-modal section {
+  background: #fafafa;
+  padding: 15px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.cdm-modal p {
+  margin: 4px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+/* ================= LABELS, INPUTS, SELECTS ================= */
+.cdm-modal label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.cdm-modal select {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+  background: #fff;
+  transition: border 0.2s;
+}
+
+.cdm-modal select:focus {
+  border-color: #010217;
+  outline: none;
+}
+
+/* ================= BOTÃO FINALIZAR ================= */
+/* ================= BOTÃO FINALIZAR ================= */
+/* Evita que o botão FECHAR herde os estilos grandes */
+.cdm-modal button:not(.cdm-close) {
+  width: 100%;
+  padding: 12px;
+  background: #010217;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: 0.25s;
+}
+
+.cdm-modal button:not(.cdm-close):hover {
+  background: #0a0d4f;
+}
+
+.cdm-modal button:not(.cdm-close):disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+
+/* ================= RESPONSIVIDADE ================= */
+@media (max-width: 480px) {
+  .cdm-modal {
+    padding: 20px;
+    width: 92%;
+  }
+
+  .cdm-modal h2 {
+    font-size: 19px;
+  }
+}

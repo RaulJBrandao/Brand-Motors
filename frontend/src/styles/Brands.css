@@ -1,0 +1,34 @@
+
+/*Conteúdo da caixa desfocada com as logos*/
+
+.brands-container {
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+   background: linear-gradient(to bottom, #000004, #02020E, #010217);
+   backdrop-filter: blur(10px)
+}
+
+.brands-section {
+  background: rgba(56, 56, 56, 0.5);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.brand-logo {
+  height: 45px;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.15);
+}
+

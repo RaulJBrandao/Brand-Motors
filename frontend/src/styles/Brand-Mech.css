@@ -1,0 +1,307 @@
+
+/*Página Serviços*/
+
+.bm-serv-page {
+  font-family: Arial, sans-serif;
+  background-color: #e6e6e6;
+  min-height: 100vh;
+}
+
+.bm-topbar {
+  background-color: #1b1b1b;
+  color: white;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*Botão para abrir formulário de login*/
+.auth-btn {
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.breadcrumb {
+  background-color: #e6e6e6;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #222;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.breadcrumb span {
+  white-space: nowrap;
+}
+
+/*Cards de Serviço*/
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  margin: 16px;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.service-card p {
+  margin: 0 16px 16px 16px;
+  color: #333;
+}
+
+/*Agendamento*/
+
+.bm-service-agendamento{
+  padding: 3rem 10rem;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.bm-service-agendamento h2{
+font-size: 38px;
+font-weight: bold;
+margin-bottom: 20px;
+
+}
+
+.bm-service-agendamento p{
+
+font-size: 18px;
+margin-bottom: 35px;
+}
+
+.bm-agendamento-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.bm-agendamento-content img{
+
+  height: 260px;
+  border-radius: 6px;
+  object-fit: cover;
+
+}
+
+/*Conteudo do atendimento*/
+
+.bm-suporte{
+
+padding: 3rem 10rem ;
+font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+.bm-suporte h2{
+
+   font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
+}
+
+.bm-suporte li{
+
+  font-size: 18px;
+
+}
+
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 50px;
+}
+
+.info-card {
+  background-color: black; 
+  color: white;
+  padding: 2rem;
+  width: 250px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-card strong{
+
+  font-size: 25px;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  inset: 0; /* top:0; left:0; right:0; bottom:0; */
+  display: flex;
+  align-items: flex-start; /* começa perto do topo para dar efeito de "descer" */
+  justify-content: center;
+  padding-top: 6vh; /* distancia do topo para modal iniciar */
+  pointer-events: none;
+  background: rgba(0,0,0,0); /* transparente por padrão */
+  transition: background 300ms ease;
+  z-index: 2000;
+}
+
+/* quando aberto, ativa pointer events e escurece o fundo */
+.overlay.open {
+  pointer-events: auto;
+  background: rgba(0,0,0,0.55);
+}
+
+/* modal container (inicialmente deslocado para cima e invisível) */
+.login-modal {
+  width: 380px;
+  max-width: calc(100% - 40px);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 14px 40px rgba(1,2,23,0.45);
+  transform: translateY(-18px) scale(0.99);
+  opacity: 0;
+  transition: transform 360ms cubic-bezier(.2,.9,.2,1), opacity 320ms ease;
+  overflow: hidden;
+  pointer-events: auto;
+  position: relative;
+}
+
+/* quando overlay aberto, modal "desce" com opacidade */
+.overlay.open .login-modal {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* close button */
+.modal-close {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  border: none;
+  background: transparent;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+  padding: 6px;
+}
+
+/* inner content */
+.modal-inner {
+  padding: 22px 20px 26px 20px;
+  text-align: center;
+}
+
+/* brand logo */
+.modal-brand img {
+  width: 120px;
+  margin-bottom: 8px;
+}
+
+/* tabs */
+.modal-tabs {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.tab {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+.tab.active {
+  background: #010217;
+  color: white;
+}
+
+/* form */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.modal-form input {
+  width: 92%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d0d0d0;
+  font-size: 14px;
+}
+.primary {
+  width: 92%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #010217;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 6px;
+}
+.small { margin-top: 6px; color: #666; font-size: 13px; }
+.socials { display:flex; gap:10px; margin-top: 6px; }
+.social { padding:8px 10px; border-radius:8px; border:1px solid #ccc; cursor:pointer; }
+.social.google { background: #fff; }
+.social.fb { background: #1877f2; color: #fff; border-color: #1877f2; }
+
+/* note text */
+.modal-note { font-size: 12px; color: #666; margin-top: 8px; }
+
+/* link btn small */
+.link-btn { background: none; border: none; color: #007bff; cursor: pointer; text-decoration: underline; padding:0; font-weight:600; }
+
+/* ajuste mobile */
+@media (max-width: 480px) {
+  .login-modal { width: 92%; margin: 0 8px; }
+  .modal-brand img { width: 100px; }
+}

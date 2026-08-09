@@ -1,0 +1,242 @@
+html, body {
+  margin: 0;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 100%;
+}
+
+.homepage {
+ background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  height: 100vh; /* Garante que o fundo cobre a tela toda */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+
+
+/* Transição entre homepage e main-content */
+.fade-transition {
+  
+  height: 60px;
+   background: linear-gradient(to bottom,rgba(0, 0, 0, 0), #010217, #02020E, #000004);
+  margin-top: -100px; /* sobrepõe o final da homepage para suavizar a transição */
+  z-index: 1;
+  position: relative;
+
+}
+
+/*Conteudo da seção destaques*/
+
+.main-content {
+   background: #010217; 
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+   font-family: 'Oxanium', sans-serif;
+  font-size: 40px;
+}
+
+.section-title {
+
+  margin-block-end: 100px;
+
+}
+
+/* GRID dos Destaques */
+.destaques-grid {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card compacto e elegante */
+.destaque-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  width: 280px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* Ícone de favorito — inicialmente invisível */
+.fav-btn-home .fav-btn {
+  opacity: 0;
+  transition: 0.25s ease;
+}
+
+/* Quando passar o mouse no card → aparece */
+.destaque-card:hover .fav-btn {
+  opacity: 1 !important;
+}
+
+/* Posição fixa no canto superior direito */
+.fav-btn-home {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 20;
+}
+
+/* Evita o botão expandir área clicável */
+.fav-btn-home .fav-btn {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.destaque-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+/* Imagem com limite correto */
+.destaque-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #e4e4e4;
+}
+
+/* Título */
+.destaque-card h4 {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Preço */
+.destaque-card p {
+  margin-top: 6px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.destaque-link {
+
+  text-decoration: none;
+}
+
+.estoque-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.estoque-button {
+  background-color: #e53935;
+  color: white;
+  padding: 16px 32px;
+  margin: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+    font-family: 'Oxanium', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.estoque-button:hover {
+  background-color: #c62828;
+}
+
+/*Conteudo Visual da parte da Brand Mech*/
+
+.brandmech-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 40px;
+  background-color: #d6d6d6;
+  color: #000;
+  flex-wrap: wrap;
+}
+
+.brandmech-left {
+  max-width: 400px;
+  margin-right: 40px;
+}
+
+.brandmech-logo {
+  width: 350px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.brandmech-heading {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'Oxanium', sans-serif;
+  margin-bottom: 20px;
+}
+
+.brandmech-subtext {
+  font-size: 20px;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+.brandmech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-auto-rows: 100px;
+  gap: 50px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.brandmech-button {
+  background-color: #010117;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  border-radius: 2px;
+  text-decoration: none;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.brandmech-button:hover {
+  background-color: #1c1c35;
+  cursor: pointer;
+}
+
+/*conteúdo da localização*/
+
+.localizacao-section {
+  background-color: #000000;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.localizacao-img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+

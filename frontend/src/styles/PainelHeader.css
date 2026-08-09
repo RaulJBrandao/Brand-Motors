@@ -1,0 +1,27 @@
+/* Header preto do painel administrativo */
+
+.painel-header-bar {
+  
+  height: 60px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px; 
+}
+
+.painel-header-icon {
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.painel-header-icon:hover {
+  opacity: 0.7;
+}
+
+.painel-header-left,
+.painel-header-right {
+  display: flex;
+  align-items: center;
+}

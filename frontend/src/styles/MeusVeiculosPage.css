@@ -1,0 +1,45 @@
+/* ===== CONTAINER ===== */
+.meusveiculos-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ===== CARDS EM LISTA ===== */
+.meusveiculos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ===== CARD ===== */
+.meusveiculos-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* ===== IMAGEM AJUSTADA ===== */
+.meusveiculos-img {
+  width: 100%;
+  max-width: 550px;      /* 🔥 limita o tamanho máximo */
+  height: 260px;         /* 🔥 altura fixa */
+  object-fit: cover;     /* 🔥 corta sem distorcer */
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 15px;   /* centraliza */
+}
+
+/* ===== TEXTOS ===== */
+.meusveiculos-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.meusveiculos-card p {
+  font-size: 1rem;
+  margin: 4px 0;
+}

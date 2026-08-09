@@ -1,0 +1,105 @@
+.fav-container {
+  width: 85%;
+  margin: 40px auto;
+}
+
+.fav-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.btn-voltar {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+.btn-voltar:hover {
+  color: #000;
+}
+
+.fav-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  position: relative;
+}
+
+.fav-img-box img {
+  width: 200px;
+  height: 140px;         /* Mantém proporção */
+  object-fit: cover;     /* 👉 nunca distorce */
+  border-radius: 10px;
+}
+
+.fav-info {
+  flex: 1;
+}
+
+.fav-info h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fav-price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.fav-details {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #444;
+}
+
+.fav-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+
+.fav-remove-btn {
+  background: #ff4d4f;
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.fav-remove-btn:hover {
+  background: #d9363e;
+}
+
+
+/* =========================== */
+/*  RESPONSIVIDADE             */
+/* =========================== */
+@media (max-width: 480px) {
+  .fav-title {
+    font-size: 26px;
+  }
+
+  .fav-card img {
+    height: 150px;
+  }
+}

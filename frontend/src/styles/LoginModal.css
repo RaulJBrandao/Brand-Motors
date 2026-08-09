@@ -1,0 +1,175 @@
+/* Fundo escurecido atrás do modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+/* === Estilo para os textos de aviso (termos, política, etc) === */
+.modal-note {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 1rem;
+}
+
+/* Caixa principal do modal */
+.modal-content {
+  background-color: #ffffff;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Logo */
+.modal-content .logo {
+  width: 130px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+/* Título principal */
+.modal-content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+/* Lista de benefícios */
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  text-align: left;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.modal-content ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* Botões sociais */
+.google-btn,
+.facebook-btn {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-bottom: 0.7rem;
+}
+
+.google-btn {
+  background-color: #db4437;
+  color: white;
+}
+
+.google-btn:hover {
+  background-color: #c23321;
+}
+
+.facebook-btn {
+  background-color: #1877f2;
+  color: white;
+}
+
+.facebook-btn:hover {
+  background-color: #0f5fd4;
+}
+
+/* "Entrar com e-mail" */
+.email-login {
+  color: #555;
+  margin: 1rem 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Termos e política */
+.terms {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 1.2rem;
+}
+
+.terms a {
+  color: #e21a1a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+/* Animação de entrada suave */
+@keyframes modalSlideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.login-modal {
+  animation: modalSlideFade 0.45s ease forwards;
+}
+
+/*animação de saida*/
+
+.login-modal.close {
+  animation: modalSlideFadeOut 0.35s ease forwards;
+}
+
+@keyframes modalSlideFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .modal-content {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .modal-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .google-btn,
+  .facebook-btn {
+    font-size: 0.9rem;
+  }
+}
+
+

@@ -1,0 +1,77 @@
+.auth-bar {
+  background-color: #1a1a1a;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.4rem 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-buttons,
+.user-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.auth-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.auth-btn:hover {
+  color: #ffcc00;
+}
+
+.auth-btn.alt {
+  color: #ccc;
+}
+
+.auth-btn.alt:hover {
+ color: #ffcc00;
+}
+
+.user-name {
+   font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+  /* light */
+  font-size: 15px;    /* ajuste conforme precisar */
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.user-action {
+  background: none;
+  font-size: 15px;
+  padding: 0.3rem 0.8rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.user-action:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.user-logout {
+  background: none;
+  border: 1px solid #ff4c4c;
+  border-radius: 5px;
+  padding: 0.3rem 0.8rem;
+  color: #ff4c4c;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.user-logout:hover {
+  background-color: #ff4c4c;
+  color: #fff;
+}

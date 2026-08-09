@@ -1,0 +1,91 @@
+.agendamento-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.agendamento-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e4e4e4;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.agendamento-titulo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.agendamento-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.agendamento-input,
+.agendamento-select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+
+  border: 1px solid #ccc;
+  background: #fafafa;
+
+  font-size: 1rem;
+  color: #222;
+}
+
+.agendamento-input:focus,
+.agendamento-select:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.btn-agendar {
+  margin-top: 20px;
+  background: #010217;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+
+  transition: 0.2s ease;
+}
+
+.btn-agendar:hover {
+  background: #080a37;
+  transform: scale(1.02);
+}
+
+.msg-sucesso {
+  background: #0fbb4b;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

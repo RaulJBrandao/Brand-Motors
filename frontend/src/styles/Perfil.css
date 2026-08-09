@@ -1,0 +1,79 @@
+.perfil-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 20px;
+}
+
+.perfil-left {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+}
+
+.perfil-foto {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.perfil-nome {
+  margin-top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.perfil-data,
+.perfil-email,
+.perfil-telefone {
+  margin: 5px 0;
+  color: #444;
+}
+
+.perfil-btn {
+  padding: 10px 15px;
+  margin-top: 12px;
+  background: #dedede;
+  border: 1px solid #999;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.perfil-btn:hover {
+  background: #ccc;
+}
+
+.perfil-btn.sair {
+  background: #f3c6c6;
+  border-color: #a04c4c;
+}
+
+.perfil-right {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.perfil-card {
+  width: 220px;
+  height: 160px;
+  background: #dfdfdf;
+  border-radius: 6px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-titulo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-icone {
+  font-size: 40px;
+  align-self: flex-end;
+}
