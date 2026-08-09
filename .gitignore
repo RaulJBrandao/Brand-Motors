@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+node_modules
+=======
+node_modules/
+
+# Ignorar build do React
+frontend/build/
+
+# Ignorar uploads do backend
+backend/uploads/cars/
+backend/history/
+
+# Ignorar arquivos temporários e de log
+*.log
+.env
+.DS_Store
+>>>>>>> origin/main
